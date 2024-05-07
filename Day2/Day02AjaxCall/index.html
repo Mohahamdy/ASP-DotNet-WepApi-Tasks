@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ajax Call</title>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"
+        integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+    <style>
+        body {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 20px;
+        }
+
+        #lol {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-direction: column;
+            gap: 10px;
+        }
+
+        th {
+            font-size: 12pt;
+            font-weight: bold;
+        }
+
+        th,
+        td {
+            border: 1px solid black;
+            text-align: center;
+        }
+
+        #ll {
+            border: 2px solid #000;
+            display: inline-block;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="lol">
+        <input type="number" name="st_Id" id="st_Id" placeholder="Student Id">
+        <input type="text" name="st_Fname" id="st_Fname" placeholder="Student First Name">
+        <input type="text" name="st_Lname" id="st_Lname" placeholder="Student Last Name">
+        <input type="text" name="st_Address" id="st_Address" placeholder="Student Address">
+        <input type="number" name="st_Age" id="st_Age" placeholder="Student Age">
+        <input type="number" name="dept_Id" id="dept_Id" placeholder="Student department">
+        <input type="number" name="st_super" id="st_super" placeholder="Student SuperVisor">
+        <input type="submit" name="submit" id="submit" onclick="AddStudent()">
+    </div>
+    <div id="ll"></div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
